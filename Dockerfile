@@ -1,0 +1,16 @@
+FROM python:3.11-slim
+
+Run pip install --no-cache-dir \
+    pandas \
+    numpy \
+    matplotlib \
+    seaborn \
+    scikit-learn \
+    scipy \
+    requests
+
+WORKDIR /appp/pipeline/
+
+COPY . /app/pipeline/
+
+CMD ["bash"]
