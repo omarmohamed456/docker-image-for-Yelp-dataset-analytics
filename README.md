@@ -1,13 +1,15 @@
 # docker-image-for-Yelp-dataset-analytics
 These are the the files used to create the Yelp-dataset-analytics docker image found here:
-[text](https://hub.docker.com/repository/docker/omar1456/customer-analytics/general)
+[text](https://hub.docker.com/repository/docker/omar1456/customer-analytics/general)  
+https://hub.docker.com/repository/docker/omar1456/customer-analytics/general
 
 badge
+[![Docker Pulls](https://img.shields.io/docker/pulls/omar1456/customer-analytics?style=flat-square)](https://hub.docker.com/repository/docker/omar1456/customer-analytics/general)
 
 ## dataset
-Dataset used is the Yelp dataset found here: 
-https://www.kaggle.com/datasets/luisfredgs/yelp-reviews-csv?select=yelp_review.csv
-The datset shape is (5261668, 9)
+Dataset used is the Yelp dataset found here:   
+https://www.kaggle.com/datasets/luisfredgs/yelp-reviews-csv?select=yelp_review.csv  
+The datset shape is (5261668, 9)  
 Coulumns are [review_id, user_id, business_id, stars, date, text, useful, funny, cool]
 
 ## pipeline
