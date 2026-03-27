@@ -1,16 +1,15 @@
 # docker-image-for-Yelp-dataset-analytics
 These are the the files used to create the Yelp-dataset-analytics docker image found here:
-[text](https://hub.docker.com/repository/docker/omar1456/customer-analytics/general)  
-https://hub.docker.com/repository/docker/omar1456/customer-analytics/general
-
-badge
-[![Docker Pulls](https://img.shields.io/docker/pulls/omar1456/customer-analytics?style=flat-square)](https://hub.docker.com/repository/docker/omar1456/customer-analytics/general)
+https://hub.docker.com/r/omar1456/customer-analytics [![Docker Pulls](https://img.shields.io/docker/pulls/omar1456/customer-analytics?style=flat-square)](https://hub.docker.com/r/omar1456/customer-analytics)
 
 ## dataset
-Dataset used is the Yelp dataset found here:   
+The dataset included in the image is a **sample of the Yelp dataset** found here:  
 https://www.kaggle.com/datasets/luisfredgs/yelp-reviews-csv?select=yelp_review.csv  
-The datset shape is (5261668, 9)  
-Coulumns are [review_id, user_id, business_id, stars, date, text, useful, funny, cool]
+
+You can download the **full dataset** and rebuild the Docker image locally using the provided commands, avoiding the need to include the full dataset in the image.  
+
+The full dataset has a shape of **(5,261,668, 9)** and the following columns:  
+`[review_id, user_id, business_id, stars, date, text, useful, funny, cool]`
 
 ## pipeline
 
@@ -58,7 +57,8 @@ After that manually call the summary script
   - Saves as `clusters.txt`
 
 - **summary.sh**
-  - ..
+  - Copies all output files from container to `results/`
+  -Stops and removes the container
 
 ---
 
@@ -83,7 +83,7 @@ This will automatically execute the full pipeline.
 ```bash
 exit
 ```
-### 5. Copy results and clean up
+### 5. Copy results to local machine and clean up
 On Windows PowerShell:
 ```bash
 .\summary.ps1
