@@ -1,8 +1,4 @@
-# Dataset
-yelp_review.csv
-*.csv
-
-# Jupyter notebooks 
+# notebook 
 *.ipynb
 
 # Results / outputs
