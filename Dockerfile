@@ -9,7 +9,7 @@ Run pip install --no-cache-dir \
     scipy \
     requests
 
-WORKDIR /appp/pipeline/
+WORKDIR /app/pipeline/
 
 COPY . /app/pipeline/
 
