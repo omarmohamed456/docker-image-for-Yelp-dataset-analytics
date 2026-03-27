@@ -1,0 +1,26 @@
+# Dataset
+yelp_review.csv
+*.csv
+
+# Jupyter notebooks 
+*.ipynb
+
+# Results / outputs
+results/
+*.txt
+*.png
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Git files
+.git
+.gitignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
