@@ -58,7 +58,7 @@ After that manually call the summary script
 
 - **summary.sh**
   - Copies all output files from container to `results/`
-  -Stops and removes the container
+  - Stops and removes the container
 
 ---
 
