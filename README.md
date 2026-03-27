@@ -1,6 +1,8 @@
 # docker-image-for-Yelp-dataset-analytics
 These are the the files used to create the Yelp-dataset-analytics docker image found here:
+[text](https://hub.docker.com/repository/docker/omar1456/customer-analytics/general)
 
+badge
 
 ## dataset
 Dataset used is the Yelp dataset found here: 
@@ -91,10 +93,15 @@ On Git Bash:
 ./summary.sh
 ```
 ## other files
-
 - **eda.ipynb**
   - Simple EDA notebook used to:
   - Generate a smaller sample dataset used for testing and building the Docker image
+
+- **dockerfile**
+  - Used to create the image
+
+- **.dockerignore**
+  - Used to ignore unnecessary files when building the Docker image
 
 - **summary.sh**
   - Bash script used in Git Bash
