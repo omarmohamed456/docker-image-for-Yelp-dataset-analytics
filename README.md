@@ -64,32 +64,32 @@ After that manually call the summary script
 
 ```bash
 docker build -t customer-analytics 
-
+```
 ### 2. Run container
 ```bash
 docker run -it --name customer-container customer-analytics
-
+```
 ### 3. Run pipeline inside container
 ```bash
 python ingest.py yelp_review.csv
-
+```
 This will automatically execute the full pipeline.
 
 ### 4. Exit container
 ```bash
 exit
-
+```
 ### 5. Copy results and clean up
 On Windows PowerShell:
 ```bash
 .\summary.ps1
-
+```
 or
 
 On Git Bash:
 ```bash
 ./summary.sh
-
+```
 ## other files
 
 - **eda.ipynb**
