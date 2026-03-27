@@ -3,6 +3,8 @@ import pandas as pd
 import subprocess
 
 def main():
+    print("loading dataset")
+    
     if len(sys.argv) < 2:
         print("Usage: python ingest.py <dataset_path>")
         sys.exit(1)

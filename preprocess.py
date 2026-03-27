@@ -1,5 +1,8 @@
 import pandas as pd
 import sys
+import subprocess
+
+print("preprocess.py called successfully")
 
 #Load dataset
 
@@ -41,7 +44,6 @@ df = df[columns_to_keep]
 print(f"Dropped the following columns for dimensionality reduction: {dropped_cols}")
 
 #Discretization
-
 def stars_bin(star):
     if star <= 2:
         return 'low'
@@ -56,3 +58,6 @@ print("Added column: 'stars_binned'")
 #Save preprocessed data
 df.to_csv("data_preprocessed.csv", index=False)
 print("Preprocessed data Saved to data_preprocessed.csv")
+
+#call analytics.py
+subprocess.run(["python", "analytics.py", "data_preprocessed.csv"])
