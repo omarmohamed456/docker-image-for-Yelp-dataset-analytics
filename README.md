@@ -67,7 +67,7 @@ After that manually call the summary script
 ### 1. Build Docker image
 
 ```bash
-docker build -t customer-analytics 
+docker build -t customer-analytics .
 ```
 ### 2. Run container
 ```bash
